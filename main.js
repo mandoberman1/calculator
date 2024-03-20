@@ -4,9 +4,8 @@ function End(){
     alert("По новой.")
     formula = prompt("Выберите подходящую формулу для вашего примера. a)n+m   b)n-m   c)(n+m)-(a+b)   d)n+m+a   e)n-m-a   f)(n-m)+(a-b)   g)n-m+a   j)n+m-a   k)n*m   t)n/m")
 }
-
 while(formula != form || formula == form){
-    if(formula == form[0]){
+    if(formula == form[0]){    // formula = ("a")
         let n = +prompt("Вы выбрали формулу a) n+m. Укажите значение n");
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -18,9 +17,9 @@ while(formula != form || formula == form){
             m = +prompt(n + "+m. Укажите значение m");
         }
         let answer = n + m;
-        alert("Ответ: " + answer + ".");
+        alert("Получается: " + n + "+" + m + "=" + answer)
     }
-    if(formula == form[1]){
+    if(formula == form[1]){    // formula = ("b")
         let n = +prompt("Вы выбрали формулу b) n-m. Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -32,10 +31,10 @@ while(formula != form || formula == form){
             m = +prompt(n + "+m. Укажите значение m");
         }
         let answer = n - m
-        alert("Ответ: " + answer + "."); 
+        alert("Получается: " + n + "-" + m + "=" + answer) 
         
     } 
-    if(formula == form[2]){
+    if(formula == form[2]){    // formula = ("c")
         let n = +prompt("Вы выбрали формулу c) (n+m)-(a+b). Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -54,13 +53,13 @@ while(formula != form || formula == form){
         let b = +prompt("("+ n +"+" + m + ")-("+ a +"+b). Укажите значение b")
         while(isNaN(b) == true){
             alert("Вы ввели не число!")
-            b = +prompt("("+ n +"+" + m + ")-("+ a +"+b). Укажите значение b");
+            b = +prompt("(" + n + "+" + m + ")-(" + a + "+b). Укажите значение b");
         }
         let answer = (n + m) - (a + b)
-        alert("Ответ: " + answer + ".");   
+        alert("Получается: (" + n + "+" + m + ")-(" + a + "+" + b + ")=" + answer)   
                 
     }
-    if(formula == form[3]){
+    if(formula == form[3]){    // formula = ("d")
         let n = +prompt("Вы выбрали формулу d) n+m+a. Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -77,10 +76,10 @@ while(formula != form || formula == form){
             a = +prompt(n + "+" + m +"+a. Укажите значение a");
         }
         let answer = n + m + a
-        alert("Ответ: " + answer + ".");
+        alert("Получается: " + n + "+" + m + "+" + a + "=" + answer)
         
     }    
-    if(formula == form[4]){
+    if(formula == form[4]){    // formula = ("e")
         let n = +prompt("Вы выбрали формулу e) n-m-a. Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -97,10 +96,10 @@ while(formula != form || formula == form){
             a = +prompt(n + "-" + m + "-a. Укажите значение a");
         }
         let answer = n - m - a
-        alert("Ответ: " + answer + ".");
+        alert("Получается: " + n + "-" + m + "-" + a + "=" + answer)
                     
     } 
-    if(formula == form[5]){
+    if(formula == form[5]){    // formula = ("f")
         let n = +prompt("Вы выбрали формулу f)(n-m)+(a-b). Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -122,10 +121,10 @@ while(formula != form || formula == form){
             b = +prompt("(" + n +"-" + m + ")+(" + a + "-b). Укажите значение b");
         }
         let answer = (n - m) + (a-b)
-        alert("Ответ: " + answer + ".");   
+        alert("Получается: (" + n + "-" + m + ")+(" + a + "-" + b + ")=" + answer)
                 
     } 
-    if(formula == form[6]){
+    if(formula == form[6]){    // formula = ("g")
         let n = +prompt("Вы выбрали формулу g) n-m+a. Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -142,10 +141,10 @@ while(formula != form || formula == form){
             a = +prompt(n + "-" + m +"+a. Укажите значение a");
         }
         let answer = n - m + a
-        alert("Ответ: " + answer + ".");  
+        alert("Получается: " + n + "-" + m + "+" + a + "=" + answer)
                 
     }   
-    if(formula == form[7]){
+    if(formula == form[7]){    // formula = ("j")
         let n = +prompt("Вы выбрали формулу j) n+m-a. Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -162,9 +161,10 @@ while(formula != form || formula == form){
             a = +prompt(n + "+" + m +"-a. Укажите значение a");
         }
         let answer = n + m - a
-        alert("Ответ: " + answer + "."); 
+        alert("Получается: " + n + "+" + m + "-" + a + "=" + answer)
+
         } 
-    if(formula == form[8]){
+    if(formula == form[8]){    // formula = ("k")
         let n = +prompt("Вы выбрали формулу k) n*m. Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -176,10 +176,10 @@ while(formula != form || formula == form){
             m = +prompt(n +"*m. Укажите значение m");
         }
         let answer = n * m
-        alert("Ответ: " + answer + ".");            
+        alert("Получается: " + n + "*" + m + "=" + answer)            
         
     }    
-    if(formula == form[9]){
+    if(formula == form[9]){    // formula = ("t")
         let n = +prompt("Вы выбрали формулу t) n/m. Укажите значение n")
         while(isNaN(n) == true){
             alert("Вы ввели не число!")
@@ -190,10 +190,19 @@ while(formula != form || formula == form){
             alert("Вы ввели не число!")
             m = +prompt(n +"/m. Укажите значение m");
         }
+        while(m == 0){
+            alert("На нуль делить нельзя!")
+            m = +prompt(n +"/m. Укажите значение m")
+            while(isNaN(m) == true){
+                alert("Вы ввели не число!")
+                m = +prompt(n +"/m. Укажите значение m");
+            }        
+        }
         let answer = n / m
-        alert("Ответ: " + answer + ".");
+        alert("Получается: " + n + "/" + m + "=" + answer)
         End()
-    }  
+    }
+         
     else if(formula != form){
         End()
     }     

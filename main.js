@@ -191,6 +191,7 @@ while(formula != form || formula == form){
             m = +prompt(n +"/m. Укажите значение m");
         }
         let answer = n / m
+        alert("Ответ: " + answer + ".");
         End()
     }  
     else if(formula != form){

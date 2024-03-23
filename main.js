@@ -1,8 +1,8 @@
-var formula = prompt("Выберите подходящую формулу для вашего примера(Английская раскладка). a)n+m   b)n-m   c)(n+m)-(a+b)   d)n+m+a   e)n-m-a   f)(n-m)+(a-b)   g)n-m+a   j)n+m-a   k)n*m   t)n/m    Например: a")
+var formula = prompt("Выберите подходящую формулу для вашего примера из списка ниже(Английская раскладка). a)n+m   b)n-m   c)(n+m)-(a+b)   d)n+m+a   e)n-m-a   f)(n-m)+(a-b)   g)n-m+a   j)n+m-a   k)n*m   t)n/m   Например: a")
 let form = ["a","b","c","d","e","f","j","g","k","t"]
 function End(){
     alert("По новой.")
-    formula = prompt("Выберите подходящую формулу для вашего примера. a)n+m   b)n-m   c)(n+m)-(a+b)   d)n+m+a   e)n-m-a   f)(n-m)+(a-b)   g)n-m+a   j)n+m-a   k)n*m   t)n/m    Например: a")
+    formula = prompt("Выберите подходящую формулу для вашего примера из списка ниже(Английская раскладка). a)n+m   b)n-m   c)(n+m)-(a+b)   d)n+m+a   e)n-m-a   f)(n-m)+(a-b)   g)n-m+a   j)n+m-a   k)n*m   t)n/m   Например: a")
 }
 while(formula != form || formula == form){
     if(formula == form[0]){    // formula = ("a")
